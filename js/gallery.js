@@ -16,3 +16,12 @@ function unDo() {
   /*2) Change the text  of the div with the id = "image" back to the original text.  You can use the html code to see what that original text was*/
   image.innerHTML = 'Hover over an image below to display here.'
 }
+
+
+const images = document.getElementsByTagName("img");
+    // Recorre el grupo de imágenes y agrega el event listener a cada una
+    for (let i = 0; i < images.length; i++) {
+      imagenes[i].addEventListener("click", function() {
+        alert("¡Has hecho clic en una imagen con getElementsByTagName!");
+      });
+    }
