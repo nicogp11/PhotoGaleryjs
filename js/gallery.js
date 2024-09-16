@@ -21,7 +21,7 @@ function unDo() {
 const images = document.getElementsByTagName("img");
     // Recorre el grupo de imágenes y agrega el event listener a cada una
     for (let i = 0; i < images.length; i++) {
-      imagenes[i].addEventListener("click", function() {
+      images[i].addEventListener("click", function() {
         alert("¡Has hecho clic en una imagen con getElementsByTagName!");
       });
     }
