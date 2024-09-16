@@ -17,8 +17,7 @@ function unDo() {
   image.innerHTML = 'Hover over an image below to display here.'
 }
 
-
-const images = document.getElementsByTagName("img");
+  const images = document.getElementsByTagName("img");
     // Recorre el grupo de imágenes y agrega el event listener a cada una
     for (let i = 0; i < images.length; i++) {
       images[i].addEventListener("click", function() {
